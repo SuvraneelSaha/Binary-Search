@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56be7b09-f236-43c2-9781-0e627df6baf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary_Search/src/codewithSuvro/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary_Search/src/codewithSuvro/FOUR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary_Search/src/codewithSuvro/Three.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary_Search/src/codewithNigga/Developers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binary_Search/src/codewithNigga/Harry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binary_Search/src/codewithSuvro/TWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Binary_Search/src/codewithSuvro/TWO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
