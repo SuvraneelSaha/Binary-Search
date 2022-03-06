@@ -17,7 +17,7 @@ public class BinarySearch {
         System.out.println(Arrays.toString(arr));
         System.out.println("please enter the target element of the sorted array ");
         int target = in.nextInt();
-        System.out.println(binarysearch(arr,target));
+        System.out.println("The index value is " + binarysearch(arr,target));
 
 
     }
@@ -37,6 +37,7 @@ public class BinarySearch {
             // discussed in the notes for evaluation purpose
             // now 2] the conditions for the the target element with that of the middle element
             if(target<arr[mid])
+            // the start will not change only the end will change
             {
                 // we are decreasing the value of end by mid -1
                 end = mid -1 ;
