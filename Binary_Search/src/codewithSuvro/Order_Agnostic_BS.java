@@ -1,5 +1,7 @@
 package codewithSuvro;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Order_Agnostic_BS {
@@ -18,6 +20,7 @@ public class Order_Agnostic_BS {
         }
         System.out.println("please enter the target element:");
         int target = in.nextInt();
+        System.out.println(orderAgnosticBS(arr,target));
 
 
     }
@@ -30,12 +33,20 @@ public class Order_Agnostic_BS {
         boolean isasc;
         if(arr[start] <arr[end])
         {
-            isasc = true; // ascending order checking 
+            isasc = true; // ascending order checking
         }
         else
         {
             isasc = false ;
         }
+        if(isasc)
+        {
+            System.out.println("Ascending order " + Arrays.toString(arr));
+
+        }else {
+            System.out.println("Descending order" + Arrays.toString(arr));
+        }
+
         while (start<=end)
         {
             // why we are using the start <= end cause whenever the last test case ie
@@ -48,18 +59,39 @@ public class Order_Agnostic_BS {
            if(arr[mid] == target)
            {
                return mid;
-           }
+           } // this condition is for both the cases ie ascending order array and also descending order array
+
+
+
             if(isasc)
-            if(target>arr[mid]) // ascending order
             {
-                start = mid +1 ;
+                if(target>arr[mid]) // ascending order
+                {
+                    start = mid +1 ;
+                }
+                else if (target<arr[mid])
+                {
+                    end = mid -1 ;
+                }
             }
-            else if (target<arr[mid])
+            else
             {
-                end = mid -1 ;
+                if(target<arr[mid]) // descending  order
+                    // the only difference between the ascending order code and the descending order code is the > and < sign
+
+                {
+                    start = mid +1 ;
+                }
+                else if (target>arr[mid])
+                {
+                    end = mid -1 ;
+                }
             }
+
 
         }
         return -1 ;
     }
 }
+// time complexity is the same for both the ascending order and the descending order binary search
+// log n base 2
